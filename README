@@ -1,0 +1,51 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<PROJET n°2 CPOO5 : TAS BINAIRE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-----------------------------------------------------------
+Nom des binômes : <--> BAMBA Ibrahim - Groupe 1
+		  <--> ROCHA DA SILVA Matheus - Groupe 2
+-----------------------------------------------------------
+
+I)
+Ce dossier contient 7 fichiers :
+-'README' : Le fichier que vous êtes entrain de lire, contenant l'explication du contenu du projet
+-Les codes souces : * TBQueue.java, TBDQueue.java, QueueExt.java et ALTBQueue.java : contenant les codes sources des différentes implémentations
+		    des variantes de Queue réalisées dans ce projet.
+		    * Tests.java : code source des tests de performance
+		    * Main.java : code source des tests généraux du projet.
+
+
+II) COMMENT COMPILER ET TESTER LE PROGRAMME
+   ----------------------------------------
+
+1- Pour compiler : javac Main.java
+2- Pour exécuter : java Main
+	>> L'exécution se fait en deux temps :
+		-En premier lieu, le test de performance : vous verrez un grand tableau récapitulatif de toutes les méthodes de l'interface
+		 Queue appliquées sur les différentes implémentations de Queue demandées dans ce projet avec leur temps d'exécution
+		 respectifs.
+		-En second lieu, un test de fonctionnement : le programme vous proposera d'éffectuer un test pour vérifier le bon 
+		 fonctionnement des méthodes implémentées dans ce projet. Si vous acceptez, vous pourrez alors tester le fonctionnement
+		 des méthodes peek, poll, offer, filtre, map, trouve et reduit sur le type de queue de votre choix 
+		 (TBQueue, TBDQueue, ALTBQueue). Pour ces tests, nous avons choisi de façon arbitraire d'utiliser une Queue<Integer> 
+		 (tas d'entier). A chaque test, vous verrez afficher l'état du tas courant. 
+
+
+III) REPONSES AUX QUESTIONS
+     -----------------------
+
+Au vu de tous les tests de performances réalisés, on constate que : 
+a- quelque soit la variante de Queue utilisé, les méthodes peek et element sont réalisés presqu'en temps constant
+b- La variante TBQueue de Queue est celle la plus rapide en temps d'exécution (car on utilise un tableau(taille fixe), facile à parcourir et  		facile d'accès aux éléments) mais pas la plus éfficace compte tenu de sa restriction dans le nombre d'éléments maximum.
+c- Quant à la variante ALTBQueue, elle est très intéressante en temps d'exécution (on utilise une ArrayList, facilité de parcours) car elle 		coûte beaucoup moins cher que TBDQueue et est très éfficaces car on n'a ni à gérer l'état de la liste, ni à se soucier de son 		
+	remplissage éventuel.
+d- Enfin, la variante TBDQueue est celle qui coûte le plus en temps d'exécution et est très déliquat à gérer (compte tenu de la lste de 
+	tableau, difficile à parcourir et coûteux). Néamoins, cette variante est très dynamique (beaucoup plus que ALTBQueue et TBQueue
+	(en terme de mémoire)) et a une représentation (du point de vue humaine), plus facile.
+
+
+  CONCLUSION
+ ------------
+
+ALTBQueue remporte la compétition haut la main (compte tenu de sa rapidité, de sa facilité d'implémentation et de son éfficacité).
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
